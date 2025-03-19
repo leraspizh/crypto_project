@@ -1,0 +1,145 @@
+/* =========================
+СТИЛИ ОБЩЕГО ПЛАНА
+=========================== */
+
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* =========================
+КОНТЕЙНЕР КОРЗИНЫ
+=========================== */
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+РАЗМЕЩЕНИЕ ЭЛЕМЕНТОВ КРИПТОВАЛЮТ
+=========================== */
+
+.crypto-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+ГРАФИК
+=========================== */
+
+.chart-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.chart-container canvas {
+    transition: all 0.5s ease-in-out;
+    max-height: 400px;
+}
+
+/* =========================
+ТАБЛИЦА
+=========================== */
+
+.table-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 400px;
+    max-width: 600px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* =========================
+КНОПКИ
+=========================== */
+
+button.chart-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.chart-btn:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+ЦВЕТОВЫЕ СТИЛИ
+=========================== */
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+/* =========================
+ПОДСВЕТКА КРИПТОВАЛЮТЫ
+=========================== */
+
+.currency-name:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
